@@ -1,0 +1,9 @@
+# EXAMPLE LOG OUTPUT — illustrates the log format for a MARKET order.
+# This file was generated with a mocked client (no real network call) to
+# show the exact shape of a real log entry. Run cli.py against your own
+# Binance Futures Testnet keys to produce the real trading_bot.log entries
+# required for submission — see README.md "Generating the required log files".
+
+2026-07-07 14:07:31 | INFO     | trading_bot | Submitting BUY MARKET order: symbol=BTCUSDT qty=0.01 price=None
+2026-07-07 14:07:31 | INFO     | trading_bot | REQUEST place_order params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.01'}
+2026-07-07 14:07:31 | INFO     | trading_bot | RESPONSE place_order -> {'orderId': 123456789, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'side': 'BUY', 'type': 'MARKET', 'executedQty': '0.01', 'avgPrice': '68000.50'}
